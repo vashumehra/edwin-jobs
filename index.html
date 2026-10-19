@@ -21,13 +21,14 @@
 }
 </script>
 
-<!-- Favicon -->
-<img src="logo.png" alt="Edwin Incorporation Logo" style="height: 52px; width: auto; object-fit: contain;">
+<!-- 100% Reliable Inbuilt Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23002b5c' stroke='%23C9A227' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='36' fill='%230077b6'/%3E%3Cellipse cx='50' cy='50' rx='16' ry='36' fill='none' stroke='%23ffffff' stroke-width='2' opacity='0.7'/%3E%3Cline x1='14' y1='50' x2='86' y2='50' stroke='%23ffffff' stroke-width='2' opacity='0.7'/%3E%3Ctext x='50' y='57' font-family='Arial, sans-serif' font-size='20' font-weight='900' fill='%23ffffff' text-anchor='middle'%3EEI%3C/text%3E%3C/svg%3E">
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5/daisyui.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<!-- Google Modern Fonts (Inter & Poppins) -->
+<!-- Modern Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
@@ -130,28 +131,21 @@ h1, h2, h3, .font-bold {
   </div>
 </div>
 
-<!-- 2. WHITE HEADER BAR WITH ORIGINAL LOGO -->
+<!-- 2. WHITE HEADER BAR WITH PERMANENT LOGO -->
 <div style="background-color: #ffffff; border-bottom: 2px solid #003366; padding: 10px 20px; width: 100%;">
   <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
     
     <!-- Logo & Title -->
     <div style="display: flex; align-items: center; gap: 14px;">
-<div style="width: 52px; height: 52px; flex-shrink: 0; border-radius: 50%; background: linear-gradient(135deg, #002b5c 0%, #005b96 50%, #0088cc 100%); display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 8px rgba(0,43,92,0.35); border: 2px solid #C9A227; position: relative; overflow: hidden;">
-        <svg viewBox="0 0 100 100" style="position: absolute; width: 100%; height: 100%; opacity: 0.35;">
-          <circle cx="50" cy="50" r="46" fill="none" stroke="#ffffff" stroke-width="2"/>
-          <ellipse cx="50" cy="50" rx="20" ry="46" fill="none" stroke="#ffffff" stroke-width="2"/>
-          <ellipse cx="50" cy="50" rx="38" ry="46" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-          <line x1="4" y1="50" x2="96" y2="50" stroke="#ffffff" stroke-width="2"/>
-          <line x1="12" y1="28" x2="88" y2="28" stroke="#ffffff" stroke-width="1.5"/>
-          <line x1="12" y1="72" x2="88" y2="72" stroke="#ffffff" stroke-width="1.5"/>
-        </svg>
-        <div style="position: relative; z-index: 2; text-align: center;">
-          <span style="font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 900; color: #ffffff; letter-spacing: 0.5px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); display: block; line-height: 1;">EI</span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7px; font-weight: 700; color: #C9A227; text-transform: uppercase; letter-spacing: 1px; display: block; margin-top: 1px;">EDWIN</span>
-        </div>
-      </div>
-        </div>
-      </div>      <div>
+      <svg width="52" height="52" viewBox="0 0 100 100" style="flex-shrink: 0;" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" fill="#002b5c" stroke="#C9A227" stroke-width="3"/>
+        <circle cx="50" cy="50" r="36" fill="#0077b6"/>
+        <ellipse cx="50" cy="50" rx="16" ry="36" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.65"/>
+        <line x1="14" y1="50" x2="86" y2="50" stroke="#ffffff" stroke-width="2" opacity="0.65"/>
+        <path d="M 22 72 Q 50 60 78 72 L 74 84 Q 50 74 26 84 Z" fill="#001833" stroke="#ffffff" stroke-width="1.5"/>
+        <text x="50" y="79" font-family="'Poppins', sans-serif" font-size="8" font-weight="900" fill="#ffffff" text-anchor="middle">EDWIN</text>
+      </svg>
+      <div>
         <h1 style="margin: 0; color: #003366; font-size: 22px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1;">Edwin_Incorporation</h1>
         <p style="margin: 3px 0 0 0; color: #555555; font-size: 13px;">Career &amp; Recruitment Portal || Data Entry &amp; Computer Services</p>
       </div>
@@ -170,7 +164,7 @@ h1, h2, h3, .font-bold {
   </div>
 </div>
 
-<!-- ============ HERO (WELCOME TO EDWIN INCORPORATION + CRM STATS) ============ -->
+<!-- ============ HERO ============ -->
 <section id="top" class="bg-[#1B2A4A] text-white">
   <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 grid md:grid-cols-12 gap-10 items-center">
     
@@ -421,11 +415,17 @@ h1, h2, h3, .font-bold {
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
+<!-- ============ FOOTER WITH INBUILT LOGO ============ -->
 <footer class="footer-band">
   <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
     <div class="flex items-center gap-3">
-      <img src="https://edwin.co.in/images/logo.png" alt="Edwin Logo" style="height: 38px; width: auto; object-fit: contain;">
+      <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" fill="#002b5c" stroke="#C9A227" stroke-width="3"/>
+        <circle cx="50" cy="50" r="36" fill="#0077b6"/>
+        <ellipse cx="50" cy="50" rx="16" ry="36" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.65"/>
+        <line x1="14" y1="50" x2="86" y2="50" stroke="#ffffff" stroke-width="2" opacity="0.65"/>
+        <text x="50" y="58" font-family="'Poppins', sans-serif" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">EI</text>
+      </svg>
       <div>
         <div class="text-[#F5F7FA] font-bold">Edwin Incorporation</div>
         <div class="text-xs text-[#F5F7FA]/50">MS Word documentation · Data entry · Research papers · Office work</div>
