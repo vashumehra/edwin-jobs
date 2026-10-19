@@ -82,7 +82,81 @@
 <header class="hero-band sticky top-0 z-40 shadow-lg">
   <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between flex-wrap gap-y-3">
     <a href="#top" class="flex items-center gap-3">
-<img src="https://images2.imgbox.com/71/34/pWnQWf51_o.png" alt="Edwin Incorporation Logo" style="height: 52px; width: auto; object-fit: contain; mix-blend-mode: screen;" onerror="this.onerror=null;this.src='https://i.postimg.cc/85z1DkS0/logo.png';">
+<svg width="48" height="48" viewBox="0 0 500 500" style="vertical-align: middle; flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="globeSphere" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#56ccf2" />
+      <stop offset="40%" stop-color="#2f80ed" />
+      <stop offset="85%" stop-color="#0b4899" />
+      <stop offset="100%" stop-color="#041f4a" />
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc" />
+      <stop offset="50%" stop-color="#003366" />
+      <stop offset="100%" stop-color="#001a33" />
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a3560" />
+      <stop offset="50%" stop-color="#145da0" />
+      <stop offset="100%" stop-color="#0a3560" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Ring with White Border -->
+  <circle cx="250" cy="225" r="218" fill="url(#ringGrad)" stroke="#ffffff" stroke-width="5" />
+  <circle cx="250" cy="225" r="148" fill="none" stroke="#ffffff" stroke-width="4" />
+
+  <!-- Circular Texts -->
+  <path id="arcTop" d="M 72 225 A 178 178 0 0 1 428 225" fill="none" />
+  <path id="arcBottom" d="M 235 403 A 178 178 0 0 1 72 225" fill="none" />
+
+  <text fill="#ffffff" font-family="'Arial Black', Impact, sans-serif" font-size="20" font-weight="900" letter-spacing="1.5">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">
+      EDUCATION | SUPPORT FOR INNOVATIONS
+    </textPath>
+  </text>
+  <text fill="#ffffff" font-family="'Arial Black', Impact, sans-serif" font-size="19" font-weight="900" letter-spacing="1.5">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">
+      TOOLS | TECHNOLOGY |
+    </textPath>
+  </text>
+
+  <!-- Center Globe -->
+  <circle cx="250" cy="225" r="142" fill="url(#globeSphere)" stroke="#ffffff" stroke-width="3" />
+
+  <!-- Globe Longitudes and Latitudes -->
+  <ellipse cx="250" cy="225" rx="68" ry="142" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.45" />
+  <ellipse cx="250" cy="225" rx="115" ry="142" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.35" />
+  <line x1="108" y1="225" x2="392" y2="225" stroke="#ffffff" stroke-width="2" opacity="0.45" />
+  <line x1="126" y1="170" x2="374" y2="170" stroke="#ffffff" stroke-width="1.6" opacity="0.35" />
+  <line x1="126" y1="280" x2="374" y2="280" stroke="#ffffff" stroke-width="1.6" opacity="0.35" />
+
+  <!-- Continents Map Silhouettes (North & South America) -->
+  <path d="M 180 145 Q 215 130 240 155 Q 260 170 230 195 Q 200 205 175 175 Z" fill="#ffffff" opacity="0.95" />
+  <path d="M 215 210 Q 250 205 270 235 Q 265 285 240 315 Q 220 290 215 245 Z" fill="#ffffff" opacity="0.95" />
+  <path d="M 290 145 Q 330 140 345 170 Q 320 195 295 180 Z" fill="#ffffff" opacity="0.95" />
+  <path d="M 305 210 Q 345 220 335 265 Q 295 255 305 210 Z" fill="#ffffff" opacity="0.95" />
+
+  <!-- Globe Glow Overlay -->
+  <ellipse cx="215" cy="170" rx="75" ry="45" fill="#ffffff" opacity="0.25" transform="rotate(-25 215 170)" />
+
+  <!-- Wings / Open Book Base -->
+  <path d="M 110 325 Q 180 300 250 355 Q 320 300 390 325 L 380 360 Q 315 338 250 382 Q 185 338 120 360 Z" fill="#001f3f" stroke="#ffffff" stroke-width="3.5" />
+  <path d="M 135 342 Q 190 325 250 362 Q 310 325 365 342" fill="none" stroke="#ffffff" stroke-width="2.5" />
+
+  <!-- Bottom Curved Ribbon -->
+  <path d="M 30 405 L 90 375 L 75 435 Z" fill="#001f3f" stroke="#0088cc" stroke-width="3" />
+  <path d="M 470 405 L 410 375 L 425 435 Z" fill="#001f3f" stroke="#0088cc" stroke-width="3" />
+  <path d="M 45 415 Q 250 365 455 415 L 440 465 Q 250 415 60 465 Z" fill="url(#ribbonGrad)" stroke="#ffffff" stroke-width="4" />
+
+  <!-- Ribbon Text: EDWIN INCORPORATION -->
+  <path id="ribbonTextArc" d="M 60 450 Q 250 400 440 450" fill="none" />
+  <text fill="#ffffff" font-family="'Arial Black', Impact, sans-serif" font-size="33" font-weight="900" letter-spacing="3.5">
+    <textPath href="#ribbonTextArc" startOffset="50%" text-anchor="middle">
+      EDWIN INCORPORATION
+    </textPath>
+  </text>
+</svg>
 </svg>
       <div>
         <div class="font-['Libre_Baskerville',serif] text-white text-lg leading-tight font-bold">Edwin Incorporation</div>
