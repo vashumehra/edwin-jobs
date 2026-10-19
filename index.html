@@ -504,8 +504,24 @@ const indiaData = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  const stateSelect = document.getElementById('stateSelect');
-  const districtSelect = document.getElementById('districtSelect');
+// Refresh hone ke baad bhi updated number screen par dikhane ke liye
+  const savedSub = localStorage.getItem('edwin_submitted');
+  const savedSent = localStorage.getItem('edwin_sent');
+  const savedAcc = localStorage.getItem('edwin_accepted');
+  const savedDis = localStorage.getItem('edwin_dismissed');
+
+  if (savedSub && document.getElementById('countSubmitted')) {
+    document.getElementById('countSubmitted').textContent = savedSub + "+";
+  }
+  if (savedSent && document.getElementById('countSent')) {
+    document.getElementById('countSent').textContent = savedSent;
+  }
+  if (savedAcc && document.getElementById('countAccepted')) {
+    document.getElementById('countAccepted').textContent = savedAcc;
+  }
+  if (savedDis && document.getElementById('countDismissed')) {
+    document.getElementById('countDismissed').textContent = savedDis;
+  }
 
   for (let state in indiaData) {
     const opt = document.createElement('option');
