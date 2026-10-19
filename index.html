@@ -1,81 +1,108 @@
-<svg width="50" height="50" viewBox="0 0 500 500" style="vertical-align: middle; flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- 3D Blue Sphere Gradient for Globe -->
-    <radialGradient id="globeSphere" cx="40%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#70d6ff" />
-      <stop offset="25%" stop-color="#00a8e8" />
-      <stop offset="65%" stop-color="#007ea7" />
-      <stop offset="90%" stop-color="#003459" />
-      <stop offset="100%" stop-color="#00172e" />
-    </radialGradient>
-    <!-- Ring Gradient -->
-    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0077b6" />
-      <stop offset="50%" stop-color="#023e8a" />
-      <stop offset="100%" stop-color="#03045e" />
-    </linearGradient>
-    <!-- Ribbon Gradient -->
-    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#002855" />
-      <stop offset="50%" stop-color="#00509d" />
-      <stop offset="100%" stop-color="#002855" />
-    </linearGradient>
-  </defs>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edwin Incorporation | Documentation & Office Services</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cdefs%3E%3CradialGradient id='g' cx='40%25' cy='35%25' r='65%25'%3E%3Cstop offset='0%25' stop-color='%2370d6ff'/%3E%3Cstop offset='50%25' stop-color='%23007ea7'/%3E%3Cstop offset='100%25' stop-color='%2300172e'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='250' cy='250' r='230' fill='%23003366' stroke='%23ffffff' stroke-width='10'/%3E%3Ccircle cx='250' cy='250' r='160' fill='url(%23g)' stroke='%23ffffff' stroke-width='6'/%3E%3Cellipse cx='250' cy='250' rx='75' ry='160' fill='none' stroke='%23ffffff' stroke-width='4' opacity='0.5'/%3E%3Cline x1='90' y1='250' x2='410' y2='250' stroke='%23ffffff' stroke-width='4' opacity='0.5'/%3E%3Cpath d='M 120 360 Q 250 330 380 360 L 360 410 Q 250 370 140 410 Z' fill='%230a3560' stroke='%23ffffff' stroke-width='4'/%3E%3Ctext x='250' y='392' font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3EEDWIN%3C/text%3E%3C/svg%3E">
 
-  <!-- Outer Ring with White Border -->
-  <circle cx="250" cy="225" r="218" fill="url(#ringGrad)" stroke="#ffffff" stroke-width="7" />
-  <circle cx="250" cy="225" r="148" fill="none" stroke="#ffffff" stroke-width="5" />
+  <!-- Tailwind CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+    }
+    .font-serif-title {
+      font-family: 'Libre Baskerville', serif;
+    }
+    .hero-band {
+      background-color: #0f1d31;
+    }
+    .gold-accent {
+      color: #C9A227;
+    }
+    .bg-gold {
+      background-color: #C9A227;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
 
-  <!-- Circular Texts inside the Blue Ring -->
-  <path id="arcTop" d="M 68 225 A 182 182 0 0 1 432 225" fill="none" />
-  <path id="arcBottom" d="M 235 407 A 182 182 0 0 1 68 225" fill="none" />
+  <!-- 1. सबसे ऊपर गोल्डन पट्टी (Top Bar) -->
+  <div style="background-color: #b8860b; color: #ffffff; padding: 7px 20px; font-size: 13px; width: 100%;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+      
+      <!-- Contact Info -->
+      <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <a href="mailto:edwininvashu876@gmail.com" style="color: #ffffff; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+          <span>✉</span> edwininvashu876@gmail.com
+        </a>
+        <span style="opacity: 0.6;">|</span>
+        <a href="tel:+918817446884" style="color: #ffffff; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+          <span>☎</span> +91 8817446884
+        </a>
+      </div>
 
-  <text fill="#ffffff" font-family="'Arial Black', Impact, sans-serif" font-size="21" font-weight="900" letter-spacing="1.5">
-    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">
-      EDUCATION | SUPPORT FOR INNOVATIONS
-    </textPath>
-  </text>
-  <text fill="#ffffff" font-family="'Arial Black', Impact, sans-serif" font-size="20" font-weight="900" letter-spacing="1.5">
-    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">
-      TOOLS | TECHNOLOGY |
-    </textPath>
-  </text>
+      <!-- Social Media Links -->
+      <div style="display: flex; align-items: center; gap: 12px; font-weight: bold;">
+        <a href="https://www.facebook.com/edwinincorp" target="_blank" title="Facebook" style="color: #ffffff; text-decoration: none;">f</a>
+        <a href="https://x.com/Edwinincorp" target="_blank" title="Twitter / X" style="color: #ffffff; text-decoration: none;">𝕏</a>
+        <a href="https://www.linkedin.com/company/edwin-inc/" target="_blank" title="LinkedIn" style="color: #ffffff; text-decoration: none;">in</a>
+        <a href="https://www.instagram.com/edwin__incorp/" target="_blank" title="Instagram" style="color: #ffffff; text-decoration: none;">📷</a>
+        <a href="https://www.youtube.com/edwinincorp" target="_blank" title="YouTube" style="color: #ffffff; text-decoration: none;">▶</a>
+        <a href="mailto:edwininvashu876@gmail.com" title="Send Email" style="color: #ffffff; text-decoration: none;">✉</a>
+        <a href="https://wa.me/918817446884" target="_blank" title="WhatsApp Chat" style="color: #ffffff; text-decoration: none; background: rgba(255,255,255,0.2); padding: 2px 6px; border-radius: 4px;">WA</a>
+      </div>
 
-  <!-- Center Globe Sphere -->
-  <circle cx="250" cy="225" r="142" fill="url(#globeSphere)" stroke="#ffffff" stroke-width="4" />
+    </div>
+  </div>
 
-  <!-- Globe Longitudes and Latitudes (White grid) -->
-  <ellipse cx="250" cy="225" rx="68" ry="142" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.45" />
-  <ellipse cx="250" cy="225" rx="115" ry="142" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.35" />
-  <line x1="108" y1="225" x2="392" y2="225" stroke="#ffffff" stroke-width="2.5" opacity="0.45" />
-  <line x1="126" y1="170" x2="374" y2="170" stroke="#ffffff" stroke-width="2" opacity="0.35" />
-  <line x1="126" y1="280" x2="374" y2="280" stroke="#ffffff" stroke-width="2" opacity="0.35" />
-
-  <!-- Continents Map Silhouettes (North & South America) -->
-  <path d="M 180 145 Q 215 130 240 155 Q 260 170 230 195 Q 200 205 175 175 Z" fill="#ffffff" opacity="0.95" />
-  <path d="M 215 210 Q 250 205 270 235 Q 265 285 240 315 Q 220 290 215 245 Z" fill="#ffffff" opacity="0.95" />
-  <path d="M 290 145 Q 330 140 345 170 Q 320 195 295 180 Z" fill="#ffffff" opacity="0.95" />
-  <path d="M 305 210 Q 345 220 335 265 Q 295 255 305 210 Z" fill="#ffffff" opacity="0.95" />
-
-  <!-- Specular Reflection Highlight on Globe -->
-  <ellipse cx="215" cy="165" rx="75" ry="42" fill="#ffffff" opacity="0.3" transform="rotate(-28 215 165)" />
-
-  <!-- Open Book / Wings Silhouette at Bottom of Globe -->
-  <path d="M 105 325 Q 180 300 250 355 Q 320 300 395 325 L 385 365 Q 315 340 250 385 Q 185 340 115 365 Z" fill="#001833" stroke="#ffffff" stroke-width="4" />
-  <path d="M 130 342 Q 190 325 250 365 Q 310 325 370 342" fill="none" stroke="#ffffff" stroke-width="3" />
-
-  <!-- Bottom Ribbon Tails -->
-  <path d="M 30 405 L 90 375 L 75 435 Z" fill="#001833" stroke="#0077b6" stroke-width="3" />
-  <path d="M 470 405 L 410 375 L 425 435 Z" fill="#001833" stroke="#0077b6" stroke-width="3" />
-
-  <!-- Curved Bottom Ribbon Banner -->
-  <path d="M 45 415 Q 250 365 455 415 L 440 470 Q 250 420 60 470 Z" fill="url(#ribbonGrad)" stroke="#ffffff" stroke-width="5" />
-
-  <!-- Ribbon Text: EDWIN INCORPORATION -->
-  <path id="ribbonTextArc" d="M 60 454 Q 250 404 440 454" fill="none" />
-  <text fill="#ffffff" font-family="'Arial Black', Impact, sans-serif" font-size="34" font-weight="900" letter-spacing="3.5">
-    <textPath href="#ribbonTextArc" startOffset="50%" text-anchor="middle">
-      EDWIN INCORPORATION
-    </textPath>
-  </text>
-</svg>
+  <!-- 2. सफ़ेद पट्टी (Logo, Company Title & Apply Button) -->
+  <div style="background-color: #ffffff; border-bottom: 2px solid #003366; padding: 10px 20px; width: 100%;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+      
+      <!-- Logo & Title -->
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <!-- Embedded Globe Logo -->
+        <svg width="48" height="48" viewBox="0 0 500 500" style="vertical-align: middle; flex-shrink: 0;" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="globeSph" cx="40%" cy="35%" r="65%">
+              <stop offset="0%" stop-color="#70d6ff" />
+              <stop offset="30%" stop-color="#00a8e8" />
+              <stop offset="70%" stop-color="#007ea7" />
+              <stop offset="95%" stop-color="#003459" />
+              <stop offset="100%" stop-color="#00172e" />
+            </radialGradient>
+            <linearGradient id="ringG" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0077b6" />
+              <stop offset="50%" stop-color="#023e8a" />
+              <stop offset="100%" stop-color="#03045e" />
+            </linearGradient>
+            <linearGradient id="ribG" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#002855" />
+              <stop offset="50%" stop-color="#00509d" />
+              <stop offset="100%" stop-color="#002855" />
+            </linearGradient>
+          </defs>
+          <circle cx="250" cy="225" r="218" fill="url(#ringG)" stroke="#ffffff" stroke-width="6" />
+          <circle cx="250" cy="225" r="148" fill="none" stroke="#ffffff" stroke-width="4" />
+          <path id="arcT" d="M 68 225 A 182 182 0 0 1 432 225" fill="none" />
+          <path id="arcB" d="M 235 407 A 182 182 0 0 1 68 225" fill="none" />
+          <text fill="#ffffff" font-family="'Arial Black', Impact, sans-serif" font-size="20" font-weight="900" letter-spacing="1.5">
+            <textPath href="#arcT" startOffset="50%" text-anchor="middle">EDUCATION | SUPPORT FOR INNOVATIONS</textPath>
+          </text>
+          <text fill="#ffffff" font-family="'Arial Black', Impact, sans-serif" font-size="19" font-weight="900" letter-spacing="1.5">
+            <textPath href="#arcB" startOffset="50%" text-anchor="middle">TOOLS | TECHNOLOGY |</textPath>
+          </text>
+          <circle cx="250" cy="225" r="142" fill="url(#globeSph)" stroke="#ffffff" stroke-width="3" />
+          <ellipse cx="250" cy="225" rx="68" ry="142" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4" />
+          <ellipse cx="250" cy="225" rx="115" ry="142" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.3" />
+          <line x1="108" y1="225" x2="392" y2="225" stroke="#ffffff" stroke-width="2" opacity="0.4" />
+          <path d="M 180 145 Q 215 130 240 155 Q 260 170 230 195 Q 200 205 175 175 Z" fill="#ffffff" opacity="0.95" />
+          <path d="M 215 210 Q 250 205 270 235 Q 265 285 240 315 Q 220 290 215 245 Z" fill="#ffffff" opacity="0.95" />
+          <path d="M 290 145 Q 330
