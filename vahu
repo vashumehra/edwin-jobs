@@ -1,0 +1,127 @@
+zsiqf-custom-bg-color: #0066cc;
+    --zsiqf-custom-bg: #0066cc;
+    --zsiqf-cw-bg-color: #0066cc;
+    --zsiqf-dynamic-text-color: var(--zsiqf-primary-color);
+    --zsiqf-dynamic-border-color: #0066cc;
+}
+:root {
+    --zsiqf-custom-bg-color: #06c;
+    --zsiqf-cw-bg-color: var(--zsiqf-custom-bg-color);
+    --zsiqf-dynamic-bg-color: var(--zsiqf-custom-bg-color);
+    --zsiqf-dynamic-cw-bg-color: var(--zsiqf-cw-bg-color);
+    --zsiqf-tooltip-close-bg: #000;
+    --zsiqf-intigator-bg-color: #ff3520;
+    --zsiqf-mob-minimise-bg-color: rgba(0, 0, 0, .14);
+    --zsiqf-progress-load-cont-bg: hsla(0, 0%, 90%, .3);
+    --zsiqf-progress-load-bar-bg: hsla(0, 0%, 90%, .15);
+    --zsiqf-primary-bg: #fff;
+    --zsiqf-defualt-upload-bg: #666;
+    --zsiqf-primary-color: #fff;
+    --zsiqf-dynamic-text-color: var(--zsiqf-primary-color);
+    --zsiqf-dynamic-border-color: var(--zsiqf-custom-bg-color);
+    --zsiqf-media-thumbnail-icon-bg: rgba(221, 28, 28, .05);
+    --zsiqf-media-thumbnail-icon-color: #dd1c1c;
+    --zsiqf-icon-color: #888;
+    --zsiqf-d6-border: #d6d6d6;
+    --zsiqf-float-close-height: 55px;
+    --zsiq-seasonal-float-image-position: 0px;
+    --zsiqf-custom-widget-images: url(/zoho-salesiq-widgets/embed/fl/assets/images/png/Industry_2x.Q5LR9s-2HBcXR_Gub5iwGqwnlLeEufbtkM7cx6t58Ww2C3GSzdmr77INlC9VIm91.png) no-repeat;
+}
+html, :host {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    line-height: 1.5;
+    font-family: var(--default-font-family);
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+}
+*, :after, :before, ::backdrop {
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
+:root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-red-50: oklch(97.1% .013 17.38);
+    --color-red-200: oklch(88.5% .062 18.334);
+    --color-red-700: oklch(50.5% .213 27.518);
+    --color-orange-100: oklch(95.4% .038 75.164);
+    --color-orange-500: oklch(70.5% .213 47.604);
+    --color-green-600: oklch(62.7% .194 149.214);
+    --color-cyan-50: oklch(98.4% .019 200.873);
+    --color-sky-400: oklch(74.6% .16 232.661);
+    --color-blue-50: oklch(97% .014 254.604);
+    --color-blue-100: oklch(93.2% .032 255.585);
+    --color-blue-700: oklch(48.8% .243 264.376);
+    --color-blue-800: oklch(42.4% .199 265.638);
+    --color-blue-900: oklch(37.9% .146 265.522);
+    --color-purple-700: oklch(49.6% .265 301.924);
+    --color-slate-500: oklch(55.4% .046 257.417);
+    --color-slate-600: oklch(44.6% .043 257.281);
+    --color-gray-200: oklch(92.8% .006 264.531);
+    --color-gray-300: oklch(87.2% .01 258.338);
+    --color-gray-500: oklch(55.1% .027 264.364);
+    --color-gray-600: oklch(44.6% .03 256.802);
+    --color-gray-700: oklch(37.3% .034 259.733);
+    --color-gray-800: oklch(27.8% .033 256.848);
+    --color-gray-900: oklch(21% .034 264.665);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: .25rem;
+    --container-md: 28rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-3xl: 48rem;
+    --container-4xl: 56rem;
+    --container-5xl: 64rem;
+    --container-6xl: 72rem;
+    --container-7xl: 80rem;
+    --text-xs: .75rem;
+    --text-xs--line-height: calc(1 / .75);
+    --text-sm: .875rem;
+    --text-sm--line-height: calc(1.25 / .875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+Show all properties (40 more)
+}
+html[Attributes Style] {
+    -webkit-locale: "en";
+}
+user agent stylesheet
+:root {
+    view-transition-name: root;
+}
+user agent stylesheet
+html {
+    display: block;
+}
+*, :after, :before, ::backdrop {
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
+*, :after, :before, ::backdrop {
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
+
+*, :after, :before, ::backdrop {
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
