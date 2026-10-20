@@ -419,7 +419,7 @@ h1, h2, h3, .font-bold {
     </div>
   </div>
 </section>
-<!-- ================= ZOHO CRM JOB APPLICATION FORM ================= -->
+<!-- ================= ZOHO CRM JOB APPLICATION FORM (LEADS) ================= -->
 <section id="apply" style="background-color: #081426; padding: 60px 20px; font-family: 'Inter', sans-serif;">
   <div style="max-width: 650px; margin: 0 auto; background: #0f223d; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 35px 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);">
     
@@ -429,18 +429,15 @@ h1, h2, h3, .font-bold {
       <div style="width: 50px; height: 3px; background-color: #f5a623; margin: 15px auto 0 auto; border-radius: 2px;"></div>
     </div>
 
-    <form id='webform1011818000000613034' action='https://crm.zoho.in/crm/WebToContactForm' name='WebToContacts1011818000000613034' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1011818000000613034()' accept-charset='UTF-8' style="display: flex; flex-direction: column; gap: 18px;">
+    <form id='webform1011818000000613071' action='https://crm.zoho.in/crm/WebToLeadForm' name='WebToLeads1011818000000613071' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1011818000000613071()' accept-charset='UTF-8' style="display: flex; flex-direction: column; gap: 18px;">
       
       <!-- Zoho Mandatory Security Tokens -->
-      <input type='text' style='display:none;' name='xnQsjsdp' value='1dacae1d9c34e128808cc9e170aa9a8dfe7603d597292b5515f601d8d6b2bc9e'>
+      <input type='text' style='display:none;' name='xnQsjsdp' value='70bd2de86f486e7e9eed5b2b898d9eeff3372df88304561bb8df3ee667d4b61f'>
       <input type='hidden' name='zc_gad' id='zc_gad' value=''>
-      <input type='text' style='display:none;' name='xmIwtLD' value='41c6ca0db02bf9ff31d1295e053484c316b52870a134fc4058b24cda864c3c125bd42d09318c34ab5d355fc5e1511ec9'>
-      <input type='text' style='display:none;' name='actionType' value='Q29udGFjdHM='>
+      <input type='text' style='display:none;' name='xmIwtLD' value='ea5f38600328308ca0059f0df96472bb264fb165ae65d81633432105c920f1cbcfd641d9859e1757d56216195e0ee964'>
+      <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
       <input type='text' style='display:none;' name='returnURL' value='https://vashumehra.github.io/edwin-jobs/'>
       <input type='hidden' name='aG9uZXlwb3Q' value=''>
-
-      <!-- Mandatory Account Name (Auto-filled) -->
-      <input type='hidden' id='Account_Name' name='Account Name' value='Edwin Incorporation'>
 
       <!-- First Name -->
       <div>
@@ -465,30 +462,19 @@ h1, h2, h3, .font-bold {
       <!-- Phone -->
       <div>
         <label for='Phone' style="display: block; color: #e2e8f0; font-size: 13px; font-weight: 600; margin-bottom: 6px;">Phone / WhatsApp Number</label>
-        <input type='text' id='Phone' name='Phone' maxlength='50' placeholder="e.g. +91 9876543210" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 12px 14px; color: #ffffff; font-size: 14px; outline: none;">
+        <input type='text' id='Phone' name='Phone' maxlength='30' placeholder="e.g. +91 9876543210" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 12px 14px; color: #ffffff; font-size: 14px; outline: none;">
       </div>
 
-      <!-- Lead Source -->
-      <div>
-        <label for='Lead_Source' style="display: block; color: #e2e8f0; font-size: 13px; font-weight: 600; margin-bottom: 6px;">Source</label>
-        <select id='Lead_Source' name='Lead Source' style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 12px 14px; color: #ffffff; font-size: 14px; outline: none;">
-          <option value='Web Download' selected>Web Download / Online Portal</option>
-          <option value='Online Store'>Online Store</option>
-          <option value='Advertisement'>Advertisement</option>
-          <option value='Employee Referral'>Employee Referral</option>
-        </select>
-      </div>
-
-      <!-- Buttons -->
+      <!-- Submit & Reset Buttons -->
       <div style="display: flex; gap: 12px; margin-top: 10px;">
         <input type='submit' id='formsubmit' class='formsubmit' value='Submit Application' style="flex: 2; background-color: #f5a623; color: #081426; border: none; border-radius: 8px; padding: 13px 20px; font-weight: 700; font-size: 15px; cursor: pointer;">
         <input type='reset' value='Reset' style="flex: 1; background: transparent; color: #94a3b8; border: 1px solid #334e68; border-radius: 8px; padding: 13px 15px; font-weight: 600; font-size: 14px; cursor: pointer;">
       </div>
 
-      <!-- Zoho Script -->
+      <!-- Zoho Validation Script -->
       <script>
-        function validateEmail1011818000000613034(){
-          var form = document.forms['WebToContacts1011818000000613034'];
+        function validateEmail1011818000000613071(){
+          var form = document.forms['WebToLeads1011818000000613071'];
           var emailFld = form.querySelectorAll('[ftype=email]');
           for(var i = 0; i < emailFld.length; i++ ) {
             var emailVal = emailFld[i].value;
@@ -505,11 +491,11 @@ h1, h2, h3, .font-bold {
           return true;
         }
 
-        function checkMandatory1011818000000613034(){
+        function checkMandatory1011818000000613071(){
           var mndFileds = new Array('Last Name');
           var fldLangVal = new Array('Last Name');
           for (var i = 0; i < mndFileds.length; i++ ) {
-            var fieldObj = document.forms['WebToContacts1011818000000613034'][mndFileds[i]];
+            var fieldObj = document.forms['WebToLeads1011818000000613071'][mndFileds[i]];
             if (fieldObj) {
               if(((fieldObj.value).replace(/^\s+|\s+$/g,'')).length == 0) {
                 alert(fldLangVal[i] + ' cannot be empty.');
@@ -518,10 +504,10 @@ h1, h2, h3, .font-bold {
               }
             }
           }
-          if (!validateEmail1011818000000613034()) {
+          if (!validateEmail1011818000000613071()) {
             return false;
           }
-          document.querySelector('#webform1011818000000613034 .formsubmit').setAttribute('disabled', true);
+          document.querySelector('#webform1011818000000613071 .formsubmit').setAttribute('disabled', true);
           return true;
         }
       </script>
