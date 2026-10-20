@@ -270,69 +270,68 @@ h1, h2, h3, .font-bold {
             <p style="color: #94a3b8; font-size: 13px; margin: 0;">Fill out your details to join Edwin Incorporation team.</p>
           </div>
 
-          <!-- Zoho CRM Web-to-Contact Form -->
-          <form action='https://crm.zoho.in/crm/WebToContactForm' method='POST' accept-charset='UTF-8' style="display: flex; flex-direction: column; gap: 14px;">
-            
-            <!-- Hidden Zoho CRM Contacts Tokens -->
-            <!-- Hidden Zoho CRM Contacts Tokens -->
-<input type='hidden' name='xnQsjsdp' value='d04a31dc536f12a81791f96963200707cbaa33b9de349dcf355ae1bba47e7cc8'>
-<input type='hidden' name='zc_gad' id='zc_gad' value=''>
-<input type='hidden' name='xmIwtLD' value='2dfcda1e545f9d01c79310e599c00f46dd34ea3e4d60cf2a86d6976ae6798b106f7f0cd9aa7b1239a6a5e5a40da3990f'>
-<input type='hidden' name='actionType' value='Q29udGFjdHM='>
-<input type='hidden' name='returnURL' value='https://vashumehra.github.io/edwin-jobs/'>
-<input type='hidden' name='Department' value='Job Recruitment - Edwin Jobs'>
+         <!-- Zoho Web-to-Contact Form: Edwin Jobs -->
+<form action='https://crm.zoho.in/crm/WebToContactForm' method='POST' accept-charset='UTF-8' style="display: flex; flex-direction: column; gap: 14px;">
+  
+  <!-- Zoho Contacts Tokens (Wahi jo mony me chal rahe hain) -->
+  <input type='hidden' name='xnQsjsdp' value='d04a31dc536f12a81791f96963200707cbaa33b9de349dcf355ae1bba47e7cc8'>
+  <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+  <input type='hidden' name='xmIwtLD' value='2dfcda1e545f9d01c79310e599c00f46dd34ea3e4d60cf2a86d6976ae6798b106f7f0cd9aa7b1239a6a5e5a40da3990f'>
+  <input type='hidden' name='actionType' value='Q29udGFjdHM='>
+  <input type='hidden' name='returnURL' value='https://vashumehra.github.io/edwin-jobs/'>
+  <input type='hidden' name='Department' value='Job Recruitment - Edwin Jobs'>
+  <input type='hidden' name='Lead Source' value='Employee Referral'>
 
-            <!-- Name Fields -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-              <div>
-                <label for='First_Name' style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">First Name</label>
-                <input type='text' id='First_Name' name='First Name' maxlength='40' placeholder="First Name" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
-              </div>
-              <div>
-                <label for='Last_Name' style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Last Name *</label>
-                <input type='text' id='Last_Name' name='Last Name' maxlength='80' placeholder="Last Name" required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
-              </div>
-            </div>
+  <!-- Name Fields -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+    <div>
+      <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">First Name</label>
+      <input type='text' name='First Name' maxlength='40' placeholder="First Name" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
+    </div>
+    <div>
+      <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Last Name *</label>
+      <input type='text' name='Last Name' maxlength='80' placeholder="Last Name" required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
+    </div>
+  </div>
 
-            <!-- Email -->
-            <div>
-              <label for='Email' style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Email Address</label>
-              <input type='email' id='Email' name='Email' maxlength='100' placeholder="example@gmail.com" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
-            </div>
+  <!-- Email (Isi par automatic reply jata hai) -->
+  <div>
+    <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Email Address *</label>
+    <input type='email' name='Email' maxlength='100' placeholder="example@gmail.com" required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
+  </div>
 
-            <!-- Phone -->
-            <div>
-              <label for='Phone' style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Mobile / WhatsApp Number *</label>
-              <input type='tel' id='Phone' name='Phone' maxlength='30' placeholder="+91 9876543210" required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
-            </div>
+  <!-- Phone -->
+  <div>
+    <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Mobile / WhatsApp Number *</label>
+    <input type='tel' name='Phone' maxlength='30' placeholder="+91 8817446884" required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
+  </div>
 
-            <!-- Qualification / Post Details (Routed to Account Name for safe display in CRM) -->
-            <div>
-              <label for='Account_Name' style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Post / Qualification Details</label>
-              <input type='text' id='Account_Name' name='Account Name' maxlength='100' placeholder="e.g. Computer Operator, 12th Pass, PGDCA" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
-            </div>
+  <!-- Qualification / Post -->
+  <div>
+    <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Post / Qualification Details</label>
+    <input type='text' name='Account Name' maxlength='100' placeholder="e.g. Computer Operator, 12th Pass" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
+  </div>
 
-            <!-- State & City -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-              <div>
-                <label for='State' style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">State</label>
-                <input type='text' id='State' name='Mailing State' placeholder="Madhya Pradesh" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
-              </div>
-              <div>
-                <label for='City' style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">City / District</label>
-                <input type='text' id='City' name='Mailing City' placeholder="Damoh" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
-              </div>
-            </div>
+  <!-- State & City -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+    <div>
+      <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">State</label>
+      <input type='text' name='Mailing State' placeholder="Madhya Pradesh" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
+    </div>
+    <div>
+      <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">City / District</label>
+      <input type='text' name='Mailing City' placeholder="Damoh" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
+    </div>
+  </div>
 
-            <!-- Submit Button -->
-            <div style="margin-top: 14px;">
-              <button type='submit' id='formsubmit' style="width: 100%; background-color: #f5a623; color: #081426; border: none; border-radius: 8px; padding: 14px 20px; font-weight: 800; font-size: 15px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px;">
-                Submit Application
-              </button>
-            </div>
+  <!-- Submit Button -->
+  <div style="margin-top: 14px;">
+    <button type='submit' style="width: 100%; background-color: #f5a623; color: #081426; border: none; border-radius: 8px; padding: 14px 20px; font-weight: 800; font-size: 15px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px;">
+      Submit Application
+    </button>
+  </div>
 
-          </form>
-        </div>
+</form>
       </div>
       <!-- Right Side End -->
 
