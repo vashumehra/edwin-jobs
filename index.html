@@ -712,9 +712,9 @@ function renderApplicantTable() {
     tbody.appendChild(tr);
   });
 
-  document.getElementById('adminSubCount').textContent = localStorage.getItem('edwin_submitted') || 150;
-  document.getElementById('adminAccCount').textContent = localStorage.getItem('edwin_accepted') || 95;
-  document.getElementById('adminDisCount').textContent = localStorage.getItem('edwin_dismissed') || 20;
+  document.getElementById('adminSubCount').textContent = localStorage.getItem('edwin_submitted') || 0;
+  document.getElementById('adminAccCount').textContent = localStorage.getItem('edwin_accepted') || 0;
+  document.getElementById('adminDisCount').textContent = localStorage.getItem('edwin_dismissed') || 0;
 }
 
 function changeApplicantStatus(index, newStatus) {
@@ -733,8 +733,8 @@ function changeApplicantStatus(index, newStatus) {
   list[index].status = newStatus;
   localStorage.setItem('edwin_candidates', JSON.stringify(list));
 
-  let currentAcc = parseInt(localStorage.getItem('edwin_accepted') || 95);
-  let currentDis = parseInt(localStorage.getItem('edwin_dismissed') || 20);
+  let currentAcc = parseInt(localStorage.getItem('edwin_accepted') || 0);
+  let currentDis = parseInt(localStorage.getItem('edwin_dismissed') || 0);
 
   // अगर नया स्टेटस 'Accepted' किया गया है
   if (newStatus === 'Accepted') {
