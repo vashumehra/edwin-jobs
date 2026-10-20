@@ -333,42 +333,69 @@ h1, h2, h3, .font-bold {
         <input type='tel' id='Phone' name='Phone' maxlength='30' placeholder="e.g. +91 9876543210" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 12px 14px; color: #ffffff; font-size: 14px; outline: none;">
       </div>
 <script>
-const districtData = {
-  "Madhya Pradesh": ["Damoh", "Jabalpur", "Sagar", "Bhopal", "Indore", "Gwalior", "Rewa", "Satna", "Katni", "Panna", "Chhatarpur", "Tikamgarh", "Narsinghpur", "Seoni", "Chhindwara", "Ujjain", "Vidisha", "Raisen", "Hoshangabad", "Other MP District"],
-  "Uttar Pradesh": ["Agra", "Aligarh", "Prayagraj", "Varanasi", "Lucknow", "Kanpur", "Jhansi", "Lalitpur", "Banda", "Mahoba", "Gorakhpur", "Noida", "Ghaziabad", "Bareilly", "Meerut", "Other UP District"],
-  "Bihar": ["Patna", "Gaya", "Bhagalpur", "Muzaffarpur", "Purnia", "Darbhanga", "Other Bihar District"],
-  "Rajasthan": ["Jaipur", "Jodhpur", "Kota", "Bikaner", "Ajmer", "Udaipur", "Other Rajasthan District"],
-  "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Thane", "Nashik", "Aurangabad", "Other Maharashtra District"],
-  "Delhi": ["Central Delhi", "East Delhi", "New Delhi", "North Delhi", "South Delhi", "West Delhi"],
-  "Chhattisgarh": ["Raipur", "Bilaspur", "Durg", "Bhilai", "Korba", "Rajnandgaon", "Other CG District"],
-  "Gujarat": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Bhavnagar", "Jamnagar"],
-  "Haryana": ["Gurugram", "Faridabad", "Panipat", "Ambala", "Karnal", "Hisar"],
-  "Punjab": ["Ludhiana", "Amritsar", "Jalandhar", "Patiala", "Bathinda", "Mohali"]
-};
+<!-- State & Dynamic District Dropdown -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 10px;">
+              <div>
+                <label for='State' style="display: block; color: #e2e8f0; font-size: 13px; font-weight: 600; margin-bottom: 6px;">State *</label>
+                <select id='State' name='State' required onchange="updateDistricts()" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 12px 14px; color: #ffffff; font-size: 14px; outline: none;">
+                  <option value="" disabled selected>Select State</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Punjab">Punjab</option>
+                </select>
+              </div>
+              <div>
+                <label for='City' style="display: block; color: #e2e8f0; font-size: 13px; font-weight: 600; margin-bottom: 6px;">District / City *</label>
+                <select id='City' name='City' required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 12px 14px; color: #ffffff; font-size: 14px; outline: none;">
+                  <option value="" disabled selected>Select District</option>
+                </select>
+              </div>
+            </div>
 
-function updateDistricts() {
-  const stateSelect = document.getElementById("State");
-  const districtSelect = document.getElementById("City");
-  const selectedState = stateSelect.value;
+            <!-- District Script -->
+            <script>
+            const districtData = {
+              "Madhya Pradesh": ["Damoh", "Jabalpur", "Sagar", "Bhopal", "Indore", "Gwalior", "Rewa", "Satna", "Katni", "Panna", "Chhatarpur", "Tikamgarh", "Narsinghpur", "Seoni", "Chhindwara", "Ujjain", "Vidisha", "Raisen", "Hoshangabad", "Other MP District"],
+              "Uttar Pradesh": ["Agra", "Aligarh", "Prayagraj", "Varanasi", "Lucknow", "Kanpur", "Jhansi", "Lalitpur", "Banda", "Mahoba", "Gorakhpur", "Noida", "Ghaziabad", "Bareilly", "Meerut", "Other UP District"],
+              "Bihar": ["Patna", "Gaya", "Bhagalpur", "Muzaffarpur", "Purnia", "Darbhanga", "Other Bihar District"],
+              "Rajasthan": ["Jaipur", "Jodhpur", "Kota", "Bikaner", "Ajmer", "Udaipur", "Other Rajasthan District"],
+              "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Thane", "Nashik", "Aurangabad", "Other Maharashtra District"],
+              "Delhi": ["Central Delhi", "East Delhi", "New Delhi", "North Delhi", "South Delhi", "West Delhi"],
+              "Chhattisgarh": ["Raipur", "Bilaspur", "Durg", "Bhilai", "Korba", "Rajnandgaon", "Other CG District"],
+              "Gujarat": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Bhavnagar", "Jamnagar"],
+              "Haryana": ["Gurugram", "Faridabad", "Panipat", "Ambala", "Karnal", "Hisar"],
+              "Punjab": ["Ludhiana", "Amritsar", "Jalandhar", "Patiala", "Bathinda", "Mohali"]
+            };
 
-  districtSelect.innerHTML = '<option value="" disabled selected>Select District</option>';
+            function updateDistricts() {
+              const stateSelect = document.getElementById("State");
+              const districtSelect = document.getElementById("City");
+              const selectedState = stateSelect.value;
 
-  if (districtData[selectedState]) {
-    districtData[selectedState].forEach(function(district) {
-      const option = document.createElement("option");
-      option.value = district;
-      option.textContent = district;
-      districtSelect.appendChild(option);
-    });
-  } else {
-    const option = document.createElement("option");
-    option.value = "Other";
-    option.textContent = "Other";
-    districtSelect.appendChild(option);
-  }
-}
-</script>
-      
+              districtSelect.innerHTML = '<option value="" disabled selected>Select District</option>';
+
+              if (districtData[selectedState]) {
+                districtData[selectedState].forEach(function(district) {
+                  const option = document.createElement("option");
+                  option.value = district;
+                  option.textContent = district;
+                  districtSelect.appendChild(option);
+                });
+              } else {
+                const option = document.createElement("option");
+                option.value = "Other";
+                option.textContent = "Other";
+                districtSelect.appendChild(option);
+              }
+            }
+            </script>
 
     </form>
   </div>
