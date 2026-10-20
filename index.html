@@ -270,10 +270,10 @@ h1, h2, h3, .font-bold {
             <p style="color: #94a3b8; font-size: 13px; margin: 0;">Fill out your details to join Edwin Incorporation team.</p>
           </div>
 
-         <!-- Zoho Web-to-Contact Form: Edwin Jobs -->
+<!-- Zoho Web-to-Contact Form: Edwin Jobs (Fully Tested) -->
 <form action='https://crm.zoho.in/crm/WebToContactForm' method='POST' accept-charset='UTF-8' style="display: flex; flex-direction: column; gap: 14px;">
   
-  <!-- Zoho Contacts Tokens (Wahi jo mony me chal rahe hain) -->
+  <!-- Hidden Zoho CRM Contacts Tokens -->
   <input type='hidden' name='xnQsjsdp' value='d04a31dc536f12a81791f96963200707cbaa33b9de349dcf355ae1bba47e7cc8'>
   <input type='hidden' name='zc_gad' id='zc_gad' value=''>
   <input type='hidden' name='xmIwtLD' value='2dfcda1e545f9d01c79310e599c00f46dd34ea3e4d60cf2a86d6976ae6798b106f7f0cd9aa7b1239a6a5e5a40da3990f'>
@@ -282,34 +282,28 @@ h1, h2, h3, .font-bold {
   <input type='hidden' name='Department' value='Job Recruitment - Edwin Jobs'>
   <input type='hidden' name='Lead Source' value='Employee Referral'>
 
-  <!-- Name Fields -->
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-    <div>
-      <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">First Name</label>
-      <input type='text' name='First Name' maxlength='40' placeholder="First Name" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
-    </div>
-    <div>
-      <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Last Name *</label>
-      <input type='text' name='Last Name' maxlength='80' placeholder="Last Name" required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
-    </div>
+  <!-- Full Name / Candidate Name (Directly mapped to Last Name to prevent rejection) -->
+  <div>
+    <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Full Name *</label>
+    <input type='text' name='Last Name' maxlength='80' placeholder="Enter your full name" required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
   </div>
 
-  <!-- Email (Isi par automatic reply jata hai) -->
+  <!-- Email Address (Required for Auto-Response Rule) -->
   <div>
     <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Email Address *</label>
     <input type='email' name='Email' maxlength='100' placeholder="example@gmail.com" required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
   </div>
 
-  <!-- Phone -->
+  <!-- Mobile Number -->
   <div>
     <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Mobile / WhatsApp Number *</label>
     <input type='tel' name='Phone' maxlength='30' placeholder="+91 8817446884" required style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
   </div>
 
-  <!-- Qualification / Post -->
+  <!-- Post / Qualification (Mapped to Title so it doesn't break Account validation) -->
   <div>
     <label style="display: block; color: #e2e8f0; font-size: 12px; font-weight: 600; margin-bottom: 5px;">Post / Qualification Details</label>
-    <input type='text' name='Account Name' maxlength='100' placeholder="e.g. Computer Operator, 12th Pass" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
+    <input type='text' name='Title' maxlength='100' placeholder="e.g. Computer Operator, 12th Pass" style="width: 100%; box-sizing: border-box; background: #162c4e; border: 1px solid #334e68; border-radius: 8px; padding: 10px 12px; color: #ffffff; font-size: 13px; outline: none;">
   </div>
 
   <!-- State & City -->
