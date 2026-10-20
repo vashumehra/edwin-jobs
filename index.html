@@ -719,22 +719,52 @@ function renderApplicantTable() {
 
 function changeApplicantStatus(index, newStatus) {
   let list = JSON.parse(localStorage.getItem('edwin_candidates') || '[]');
-  if (list[index]) {
-    list[index].status = newStatus;
-    localStorage.setItem('edwin_candidates', JSON.stringify(list));
+  if (!list[index]) return;
 
-    if (newStatus === 'Accepted') {
-      let acc = parseInt(localStorage.getItem('edwin_accepted') || 95);
-      localStorage.setItem('edwin_accepted', acc + 1);
-    } else if (newStatus === 'Dismissed') {
-      let dis = parseInt(localStorage.getItem('edwin_dismissed') || 20);
-      localStorage.setItem('edwin_dismissed', dis + 1);
-    }
+  const oldStatus = list[index].status;
 
-    renderApplicantTable();
-    if (typeof renderApplicationStats === 'function') renderApplicationStats();
-    if (typeof updateCountersUI === 'function') updateCountersUI();
+  // अगर स्टेटस पहले से वही है, तो दोबारा नंबर मत बढ़ाओ
+  if (oldStatus === newStatus) {
+    alert("यह फ़ॉर्म पहले से ही " + newStatus + " है!");
+    return;
   }
+
+  // नया स्टेटस सेव करें
+  list[index].status = newStatus;
+  localStorage.setItem('edwin_candidates', JSON.stringify(list));
+
+  let currentAcc = parseInt(localStorage.getItem('edwin_accepted') || 95);
+  let currentDis = parseInt(localStorage.getItem('edwin_dismissed') || 20);
+
+  // अगर नया स्टेटस 'Accepted' किया गया है
+  if (newStatus === 'Accepted') {
+    currentAcc += 1;
+    if (oldStatus === 'Dismissed' && currentDis > 0) {
+      currentDis -= 1; // अगर पहले Dismissed था तो उसमें से 1 घटेगा
+    }
+  } 
+  // अगर नया स्टेटस 'Dismissed' किया गया है
+  else if (newStatus === 'Dismissed') {
+    currentDis += 1;
+    if (oldStatus === 'Accepted' && currentAcc > 0) {
+      currentAcc -= 1; // अगर पहले Accepted था तो उसमें से 1 घटेगा
+    }
+  }
+
+  localStorage.setItem('edwin_accepted', currentAcc);
+  localStorage.setItem('edwin_dismissed', currentDis);
+
+  // स्क्रीन पर काउंटर नंबर अपडेट करें
+  if (document.getElementById('countAccepted')) {
+    document.getElementById('countAccepted').textContent = currentAcc;
+  }
+  if (document.getElementById('countDismissed')) {
+    document.getElementById('countDismissed').textContent = currentDis;
+  }
+
+  renderApplicantTable();
+  if (typeof renderApplicationStats === 'function') renderApplicationStats();
+  if (typeof updateCountersUI === 'function') updateCountersUI();
 }
 </script>
 </body>
